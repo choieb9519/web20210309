@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <title>wW3Schools.com</title>
+<head>
+    <script src="all.min.js"></script>
+<style>
+    .wrapper{
+        display: flex;
+    }
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        background-color: gray;
+    }
+    .main{
+        color: white;
+        font-size: 30px;
+        padding: 15px;
+    }
+    .main:hover{
+        background-color: green;
+    }
+    <hr>
+    .container{
+        display: flex;
+        flex-direction: row;
+        flex-flow: space-between;
+        align-items: flex-start;
+        height: 1000px;
+        justify-content: spce-between;
+        <!--css trixs.com참고-->
+    }
+    .item{
+        order: 3;
+        flex-grow: 0;
+        font-size: 30px;
+        color: black;
+    }
+    .item:nth-child(odd) {
+        background-color: lightgray;
+    }
+    .item:nth-child(even) {
+        background-color: white;
+    }
+    }
+    <hr>
+</style>
+</head>
+<body>
+<div class="navbar">
+    <div class="wrapper">
+        <div class="main"><i class="fas fa-bars"></i></div>
+        <div class="main"><i class="fas fa-home"></i></div>
+        <div class="main">HTML</div>
+        <div class="main">CSS</div>
+        <div class="main">JAVASCRIPT</div>
+        <div class="main">MORE<i class="fas fa-caret-down"></i></div>
+    </div>
+    <div class="wrapper">
+        
+        <div class="main"><i class="fas fa-adjust"></i></div>
+        <div class="main"><i class="fas fa-globe-americas"></i></div>
+        <div class="main"><i class="fas fa-search"></i></div>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+</div>
+</body>
+</html>
