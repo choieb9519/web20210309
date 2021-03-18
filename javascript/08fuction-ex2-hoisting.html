@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+</style>
+</head>
+<body>
+<script>
+
+    myFunc();
+    //hoisting ok
+    function myFunc(params) {
+        consloe.log("abc");
+    }
+    
+    func2();
+    //변수에 함수를 할당
+    //hoisting not ok
+    var func2 = function(params){ //함수가 변수이름 지정되지 않는 경우
+        console.log("no name");
+    }
+    
+
+</script>
+</body>
+</html>
