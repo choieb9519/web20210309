@@ -7,10 +7,8 @@
 </head>
 <body>
     <script>
-        var cname ="flat";
-
-        var car={
-            name="cname",
+        var car ={
+            name: "flat",
             model:500
         };
 
@@ -20,14 +18,22 @@
             name:cname,
             model:600
         };
-        consol.log(car.name);
+        console.log(car2.name);
 
-        var cname ="tesla";
+        var name ="tesla";
         var car3={
-            name=cname,
+            name:name,
             model:300
         };
-        consol.log(car3.name);
+        console.log(car3.name);
+
+        name = "volvo";
+        console.log(car3.name);
+
+        var car4 = car3;
+        car4.name = "benz";
+
+        console.log(car3.name);
 
     </script>
 </body>
