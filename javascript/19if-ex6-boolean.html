@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="../css/all.min.css">
+<style>
+</style>
+</head>
+<body>
+<script>
+    console.log("boolean");
+
+    var a = true;
+    if (a) {
+        console.log("true");
+    } else {
+        console.log("false");
+    }
+
+    //불리언 타입이 아닌데 불리언 처럼 사용됨
+    console.log("number");
+    //넘버타입에서 0이 아니면 트루
+    var b = -3;
+    if (b) {
+        console.log("true");
+    } else {
+        console.log("false");
+    }
+
+    b = 0;
+        if (b) {
+            console.log("true");
+        } else {
+            console.log("false");
+        }
+
+
+    console.log("string");
+    // 빈 스트링이 아니면 true
+    var c = "";
+    if (c) {
+        console.log("true");
+        console.log("false");
+    }
+    c = " ";
+    if (c) {
+        console.log("true");
+    } else {
+        console.log("false");
+    }
+
+    console.log("undefined");
+    var d; //undefind -> false
+    if (d) {
+            console.log("true");
+        } else {
+            console.log("false");
+        }
+</script>
+</body>
+</html>
