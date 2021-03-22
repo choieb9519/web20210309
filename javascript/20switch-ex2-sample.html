@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="../css/all.min.css">
+<style>
+</style>
+</head>
+<body>
+<select onchange="desc()" name="" id="select1">
+    <option value="a">a</option>
+    <option value="b">b</option>
+    <option value="c">c</option>
+    <option value="d">d</option>
+</select>
+<p id="result"></p>
+
+<script>
+    function desc() {
+        var value = document.getElementById("select1").value;
+        var result="";
+
+        switch (value) {
+            case "a":
+                result = "90점 이상입니다."
+                break;
+            case "b":
+                result = "80점 이상입니다."
+                break;
+            case "c":
+                result = "70점 이상입니다."
+                break;
+            default:
+                result = "70점 미만입니다."
+                break;
+        }
+        document.getElementById("result").innerHTML = result;
+    }
+</script>
+</body>
+</html>
