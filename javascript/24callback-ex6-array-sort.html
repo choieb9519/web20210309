@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="../css/all.min.css">
+<style>
+</style>
+</head>
+<body>
+<script>
+    var arr1 = ["hello", "lorem", "ipsum", "bts", "blackpink", "avengers"]
+    console.log ("sort 전");
+    arr1.forEach(function(param) {
+        console.log(param);
+    });
+
+    arr1.sort();
+    console.log ("sort 후");
+    arr1.forEach(function(param) {
+        console.log(param);
+    });
+
+   //----------
+
+    arr1.sort(function (x,y) {
+        return x-y; 
+        //x가 더 크면 양수, 같으면 0, 더 작으면 음수
+    });
+
+    arr1.forEach(function (param) {
+        console.log(param);
+    })
+
+</script>
+</body>
+</html>
