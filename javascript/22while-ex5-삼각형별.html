@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../css/all.min.css">
+    <style>
+        * {
+            font-family: monospace;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="result"></div>
+    <hr>
+    <!-- #result$@2*3 -->
+    <div id="result2"></div>
+    <hr>
+    <div id="result3"></div>
+    <hr>
+    <div id="result4"></div>
+    <script>
+
+        /*
+        result1
+        *
+        **
+        ***
+        ****
+        *****
+        */
+        txt = "";
+        var i = 0;
+        while (i < 5) {
+            var j = 0;
+            while (j <= i) {
+                txt += "*";
+                j++;
+            }
+            txt += "<br>";
+            i++;
+        }
+        document.getElementById("result").innerHTML = txt;
+
+        /*
+        result2
+        *****
+        ****
+        ***
+        **
+        *
+        */
+        txt = "";
+        var i = 1;
+        while (i < 5) {
+            while (j = 5; j > i; j--) {
+                txt += "*";
+                i++
+            }
+            txt += "<br>";
+        }
+        document.getElementById("result2").innerHTML = txt;
+
+        /*
+        
+        result3
+        *****
+         ****
+          ***
+           ** 
+            *
+        */
+        txt = "";
+
+        while (i = 0; i < 5; i++) {
+            while (var k = 0; k < i; k++) {
+                txt += "&nbsp;";
+            }
+
+            while (j = 5; j > i; j--) {
+                txt += "*";
+            }
+            txt += "<br>";
+        }
+        document.getElementById("result3").innerHTML = txt;
+/*
+        result4
+            *
+           **
+          ***
+         ****
+        *****
+        
+        */
+        txt = "";
+        while (i = 0; i < 5; i++) {
+            while (k = 0; k < (4-i); k++) {
+                txt += "&nbsp;";
+            }
+            while (j = 0; j <= i; j++) {
+                txt += "*"
+            }
+            txt += "<br>";
+        }
+        document.getElementById("result4").innerHTML = txt;
+    </script>
+</body>
+
+</html>
