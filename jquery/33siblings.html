@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="../css/all.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<style>
+</style>
+<script>
+    $(document).ready(function() {
+        $("#head5").siblings().css("color", "blue");
+        //head5만 빼고 나머지만 파란색이 됨
+        $("#head5").next().css("background-color", "yellow");
+        $("#head5").prev().css("background-color", "pink");
+        $("#head5").nextAll().css("border", "3px solid green");
+        $("#head5").prevAll().css("border", "3px dotted orange");
+    });
+</script>
+</head>
+<body>
+    <!--h1#head$*10>lorem2-->
+    <h1 id="head1">Lorem, ipsum.</h1>
+    <h1 id="head2">Tenetur, rem!</h1>
+    <h1 id="head3">Nam, provident?</h1>
+    <h1 id="head4">Magni, consectetur?</h1>
+    <h1 id="head5">Accusantium, possimus.</h1>
+    <h1 id="head6">Velit, aspernatur.</h1>
+    <h1 id="head7">Deleniti, quisquam!</h1>
+    <h1 id="head8">Molestiae, neque.</h1>
+    <h1 id="head9">Ab, pariatur.</h1>
+    <h1 id="head10">Quod, voluptatibus.</h1>
+</body>
+</html>
